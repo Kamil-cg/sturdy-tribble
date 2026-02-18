@@ -27,6 +27,7 @@ modules:
       buildpack: nodejs_buildpack
       instances: 1
       no-route: true
+      no-start: true
     build-parameters:
       builder: npm-ci
   - name: btp-starterkit-postgres-deployer
