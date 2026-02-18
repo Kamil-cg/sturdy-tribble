@@ -70,7 +70,7 @@ resources:
     type: org.cloudfoundry.managed-service
     parameters:
       service: postgresql-db
-      service-plan: free
+      service-plan: developement
   - name: btp-starterkit-repo-host
     type: org.cloudfoundry.managed-service
     parameters:
