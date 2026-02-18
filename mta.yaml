@@ -67,10 +67,11 @@ modules:
         []
 resources:
   - name: btp-starterkit-postgres
-    type: org.cloudfoundry.managed-service
+    type: org.cloudfoundry.existing-service
     parameters:
-      service: postgresql-db
-      service-plan: trial
+      # service: postgresql-db
+      # service-plan: trial
+      service-name: psql-dev
   - name: btp-starterkit-repo-host
     type: org.cloudfoundry.managed-service
     parameters:
