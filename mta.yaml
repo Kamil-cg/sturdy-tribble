@@ -26,8 +26,8 @@ modules:
     parameters:
       buildpack: nodejs_buildpack
       instances: 1
-      no-route: true
-      no-start: true
+      #no-route: true
+      #no-start: true
     build-parameters:
       builder: npm-ci
   - name: btp-starterkit-postgres-deployer
@@ -69,11 +69,11 @@ modules:
         []
 resources:
   - name: btp-starterkit-postgres
-    type: org.cloudfoundry.existing-service
+    type: org.cloudfoundry.managed-service
     parameters:
-      # service: postgresql-db
-      # service-plan: trial
-      service-name: psql-dev
+      service: postgresql-db
+      service-plan: trial
+      # service-name: psql-dev
   - name: btp-starterkit-repo-host
     type: org.cloudfoundry.managed-service
     parameters:
