@@ -42,6 +42,18 @@ modules:
   #     tasks:
   #       - command: npm start
   #         name: deploy-to-postgresql #tu
+  - name: approuter
+    type: approuter.nodejs
+    path: approuter
+    requires:
+      - name: btp-starterkit-destination-service
+      - name: btp-starterkit-repo-host
+    parameters:
+      disk-quota: 256M
+      memory: 256M
+      keep-existing-routes: true
+    build-parameters:
+      builder: npm
   - name: btp-starterkit-app-content
     type: com.sap.application.content
     path: .

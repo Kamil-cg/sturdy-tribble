@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "dependencies": {
+    "@cap-js/postgres": "^2",
+    "@sap/approuter": "^20.10.0",
     "@sap/cds": "^9",
-    "express": "^4",
-    "@cap-js/postgres": "^2"
+    "express": "^4"
   },
   "devDependencies": {
     "@cap-js/cds-typer": ">=0.1",
@@ -14,10 +15,10 @@
     "@sap/cds-dk": "^9",
     "@types/node": "^24.0.0",
     "cds-plugin-ui5": "^0.13.0",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
+    "mbt": "^1.2.29",
     "rimraf": "^5.0.5",
-    "mbt": "^1.2.29"
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "start": "cds-serve",
